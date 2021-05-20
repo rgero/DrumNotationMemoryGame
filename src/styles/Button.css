@@ -61,6 +61,7 @@
   .startButton {
     padding: 15px;
     background-color: green;
+    width: 125px;
     margin:auto;
     border-radius: 15px;
     font-weight: 500;

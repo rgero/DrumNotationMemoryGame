@@ -56,18 +56,16 @@ class CardDisplay extends React.Component{
                   <div className="cardImage">
                     <img src={this.getPathToFile(this.state.selectedCard)} width={this.imageSize.width} width={this.imageSize.height} />
                   </div>
-                  {this.state.showName &&
-                    (
-                      <div>
-                        <div className="cardName">
-                          {this.state.selectedCard.cardName}
-                        </div>
-                        <Scoreboard selectNextCard={this.getNextCard}/>
-                      </div>
-                    ) 
-                  }
+                  {this.state.showName && (
+                    <div className="cardName">
+                      {this.state.selectedCard.cardName}
+                    </div>
+                  )}
+                  <div>
+                    <Scoreboard selectNextCard={this.getNextCard}/>
+                  </div>
                   <div onClick={this.toggleNameDisplay} className="toggleButton">
-                    <div>Show Name</div>
+                    {this.state.showName ? <div>Hide Name</div> : <div>Show Name</div>}
                   </div>
                 </div>
               )
