@@ -11,6 +11,7 @@ class CardDisplay extends React.Component{
 
     this.imageSize = props.cardData.imageSize;
     this.maxCards = props.cardData.cards.length;
+    this.offset = 50;
 
     this.getPathToFile = this.getPathToFile.bind(this);
     this.getNextCard = this.getNextCard.bind(this);
@@ -32,13 +33,19 @@ class CardDisplay extends React.Component{
 
   getNextCard()
   {
-    let selectedCard = this.props.cardData.cards[Math.floor(Math.random()*this.maxCards)];    
-    this.setState(
-      {
-        selectedCard: selectedCard,
-        showName: false
-      }
-    )
+    this.setState ({
+      showName: false,
+    })
+    setTimeout(() => {
+      let selectedCard = this.props.cardData.cards[Math.floor(Math.random()*this.maxCards)];    
+      this.setState(
+        {
+          selectedCard: selectedCard,
+          showName: false
+        }
+      )
+    }, 300);
+
   }
 
   toggleNameDisplay(){
@@ -54,7 +61,7 @@ class CardDisplay extends React.Component{
             {this.state.selectedCard && (
                   <div>
                   <div className="cardImage">
-                    <img src={this.getPathToFile(this.state.selectedCard)} width={this.imageSize.width} width={this.imageSize.height} />
+                    <img src={this.getPathToFile(this.state.selectedCard)} width={this.imageSize.width-this.offset} width={this.imageSize.height-this.offset} />
                   </div>
                   <div className={this.state.showName ? "cardName" : "cardName_hidden"}>
                     {this.state.selectedCard.cardName}
@@ -73,7 +80,6 @@ class CardDisplay extends React.Component{
                 <div>Start Game</div>
               </div>
             )}
-
     </div>
     );
   }

@@ -1,17 +1,21 @@
 .CardDisplay{
   margin:auto;
   text-align:center;
+  padding-bottom: 50px; 
 }
 
 .cardName {
   padding: 20px;
   font-weight: 500;
-  font-size: larger
+  font-size: larger;
+  opacity: 1;
+  transition: opacity 0.4s;
 }
 
 .cardName_hidden{
   padding: 20px;
   font-weight: 500;
   font-size: larger;
-  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
 }
