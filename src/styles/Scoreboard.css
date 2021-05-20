@@ -1,0 +1,7 @@
+.scoreboard {
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    width: 75%;
+    padding: 0 40px;
+}

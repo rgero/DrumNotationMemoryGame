@@ -1,0 +1,52 @@
+{
+  "cards":
+  [
+    {
+      "cardName": "Bass Drum",
+      "image": "Bass.png"
+    },
+    {
+      "cardName": "Floor Tom",
+      "image": "FloorTom.png"
+    },
+    {
+      "cardName": "Low Tom",
+      "image": "LowTom.png"
+    },
+    {
+      "cardName": "High Tom",
+      "image": "HighTom.png"
+    },
+    {
+      "cardName": "Snare Drum",
+      "image": "Snare.png"
+    },
+    {
+      "cardName": "Hi Hat Pedal",
+      "image": "HiHatPedal.png"
+    },
+    {
+      "cardName": "Open Hi Hat",
+      "image": "OpenHiHat.png"
+    },
+    {
+      "cardName": "Closed Hi Hat",
+      "image": "ClosedHiHat.png"
+    },
+    {
+      "cardName": "Ride Cymbal",
+      "image": "Ride.png"
+    },
+    {
+      "cardName": "Crash Cymbal",
+      "image": "Crash.png"
+    }
+  ],
+  "imageSize": {
+    "height": 400,
+    "width" : 400
+  }
+
+
+
+}

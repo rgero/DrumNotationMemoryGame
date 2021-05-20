@@ -1,0 +1,10 @@
+.CardDisplay{
+  margin:auto;
+  text-align:center;
+}
+
+.cardName {
+  padding: 20px;
+  font-weight: 500;
+  font-size: larger
+}
