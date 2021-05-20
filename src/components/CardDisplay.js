@@ -56,11 +56,9 @@ class CardDisplay extends React.Component{
                   <div className="cardImage">
                     <img src={this.getPathToFile(this.state.selectedCard)} width={this.imageSize.width} width={this.imageSize.height} />
                   </div>
-                  {this.state.showName && (
-                    <div className="cardName">
-                      {this.state.selectedCard.cardName}
-                    </div>
-                  )}
+                  <div className={this.state.showName ? "cardName" : "cardName_hidden"}>
+                    {this.state.selectedCard.cardName}
+                  </div>
                   <div>
                     <Scoreboard selectNextCard={this.getNextCard}/>
                   </div>
