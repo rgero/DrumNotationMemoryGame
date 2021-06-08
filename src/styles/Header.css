@@ -3,6 +3,9 @@
     color: white;
     margin-bottom: 1.6rem;
     padding: 1.6rem 1.0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__title {

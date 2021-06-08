@@ -1,17 +1,15 @@
 import React from 'react';
 
-import Header from './Header'
 import CardDisplay from './CardDisplay';
 
-
+// This should be stored as a state.
 const CardDataContainer = require("../CardData/CardData.json");
 
-const App = () => {
+const IndexPage = () => {
   return (
       <div className="App">
-        <Header/>
         <CardDisplay cardData={CardDataContainer}/>
       </div>
   )
 }
-export default App;
+export default IndexPage;
